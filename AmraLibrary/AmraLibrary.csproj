@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmbraModels\PermissionModel.cs" />
+    <Compile Include="AmbraModels\RouteModel.cs" />
+    <Compile Include="AmbraModels\SessionLoginResponse.cs" />
+    <Compile Include="AmbraModels\StudyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
