@@ -12,16 +12,9 @@ namespace AmbraTestApp
         AmbraApiCalls apiCalls = new AmbraApiCalls();
         string _UserName = "kashif.atiq@tenpearls.com";
         string _Password = "qazwsx123";
-        string _account_id = "76e0106d-4068-4cb8-964e-9dd0bd4f411b";
         protected void Page_Load(object sender, EventArgs e)
         {
-            Dictionary<string, string> postedData = new Dictionary<string, string>();
-            foreach(string str in Request.Form.Keys)
-            {
-                postedData.Add(str, Request.Form[str]);
-            }
 
-            var dd = System.Web.Hosting.HostingEnvironment.ApplicationHost.GetSiteName();
         }
 
         protected void btnCreateSession_Click(object sender, EventArgs e)
@@ -37,11 +30,6 @@ namespace AmbraTestApp
         protected void btnGeStudy_Click(object sender, EventArgs e)
         {
             apiCalls.GetSingleStudy(_UserName, _Password);
-        }
-
-        protected void btnGetWebhook_Click(object sender, EventArgs e)
-        {
-            apiCalls.GetWebHookList(_UserName, _Password, _account_id);
         }
     }
 }

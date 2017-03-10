@@ -17,10 +17,6 @@
 &nbsp;<asp:Button ID="btnGeStudy" runat="server" onclick="btnGeStudy_Click" 
             Text="Get Study" />
     
-        &nbsp;<asp:Button ID="btnGetWebhook" runat="server" 
-            onclick="btnGetWebhook_Click" Text="Get WebHook List" />
-        <br />
-    
     </div>
     </form>
 </body>

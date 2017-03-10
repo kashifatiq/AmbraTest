@@ -60,5 +60,24 @@
             SessionLoginResponse sessionResponse = JsonConvert.DeserializeObject<SessionLoginResponse>(ResponseList[0].ToString());
             Study Studies = JsonConvert.DeserializeObject<Study>(ResponseList[1].ToString());
         }
+
+
+        public void GetWebHookList(string userName, string password, string accountID)
+        {
+            WebHookListRequestModel _requestModel = new WebHookListRequestModel();
+            _requestModel.Login.login = userName;
+            _requestModel.Login.password = password;
+            _requestModel.webHookRequest.account_id = accountID;
+            object[] arr = new object[2];
+            arr[0] = _requestModel.Login;
+            arr[1] = _requestModel.webHookRequest;
+            JsonRequestData = JsonConvert.SerializeObject(arr);
+            _callResponse = httpClient.PostAsync(_baseAddress, new StringContent(JsonRequestData, Encoding.UTF8, "application/json"));
+
+            string responseMessage = this._callResponse.Result.Content.ReadAsStringAsync().Result;
+            List<object> ResponseList = JsonConvert.DeserializeObject<List<object>>(responseMessage);
+            SessionLoginResponse sessionResponse = JsonConvert.DeserializeObject<SessionLoginResponse>(ResponseList[0].ToString());
+            WebHookListModel webHooks = JsonConvert.DeserializeObject<WebHookListModel>(ResponseList[1].ToString());
+        }
     }
 }
