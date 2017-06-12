@@ -59,9 +59,12 @@
     <Compile Include="AmbraModels\StudyListModel.cs" />
     <Compile Include="AmbraModels\StudyListRequestModel.cs" />
     <Compile Include="AmbraModels\StudyModel.cs" />
+    <Compile Include="AmbraModels\WebHookAddResponseModel.cs" />
     <Compile Include="AmbraModels\WebHookListModel.cs" />
+    <Compile Include="AmbraModels\WebHookAddRequestModel.cs" />
     <Compile Include="AmbraModels\WebHookListRequestModel.cs" />
     <Compile Include="AmbraModels\WebHookModel.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

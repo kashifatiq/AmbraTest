@@ -56,5 +56,23 @@ namespace AmbraTestApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGetWebhook;
+        
+        /// <summary>
+        /// btnCreateWebHook control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCreateWebHook;
+        
+        /// <summary>
+        /// btnTestDateTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnTestDateTime;
     }
 }

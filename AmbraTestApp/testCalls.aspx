@@ -19,6 +19,10 @@
     
         &nbsp;<asp:Button ID="btnGetWebhook" runat="server" 
             onclick="btnGetWebhook_Click" Text="Get WebHook List" />
+        &nbsp;<asp:Button ID="btnCreateWebHook" runat="server" 
+            onclick="btnCreateWebHook_Click" Text="Create WebHook" />
+        &nbsp;<asp:Button ID="btnTestDateTime" runat="server" 
+            onclick="btnTestDateTime_Click" Text="Test Date Time" />
         <br />
     
     </div>
